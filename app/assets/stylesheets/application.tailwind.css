@@ -44,7 +44,7 @@ html {
   height: 100%;
 }
 
-main, section {
+section {
   flex-grow: 1;
 }
 
