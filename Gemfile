@@ -41,10 +41,7 @@ gem "bootsnap", require: false
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
-#added gems
-gem "pg"
-gem "devise"
-gem 'iex-ruby-client'
+
 
 
 group :development, :test do
@@ -74,6 +71,10 @@ group :development, :test do
   gem 'webmock'
 end
 
+#added gems
+gem "pg"
+gem "devise"
+gem 'iex-ruby-client'
 gem "letter_opener", group: :development
-
 gem "tailwindcss-rails", "~> 2.2"
+gem 'solargraph', group: :development
