@@ -10,7 +10,7 @@ Rails.application.routes.draw do
     sessions: 'users/sessions',
     registrations: 'users/registrations',
   }
-  
+
   # Defines the root path route ("/")
   # root "posts#index"
   #Landing page
