@@ -78,3 +78,4 @@ gem 'iex-ruby-client'
 gem "letter_opener", group: :development
 gem "tailwindcss-rails", "~> 2.2"
 gem 'solargraph', group: :development
+gem "omniauth"
