@@ -12,9 +12,9 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # POST /resource
   def create
     super do |resource|
-      debugger
       if resource.valid?
-        resource.status = 'pending' # Set the default status
+        resource.status = 'pending' # Set default status
+        resource.admin = false      # Set default admin value
         resource.save
       end
     end
@@ -48,7 +48,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
   # If you have extra params to permit, append them to the sanitizer.
   def configure_sign_up_params
-    devise_parameter_sanitizer.permit(:sign_up, keys: [:email, :password, :password_confirmation, :admin, :status])
+    devise_parameter_sanitizer.permit(:sign_up, keys: [:admin, :status])
   end
 
   # If you have extra params to permit, append them to the sanitizer.
